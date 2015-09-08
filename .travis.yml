@@ -6,6 +6,7 @@ before_install:
   - git clone --depth=1 https://github.com/apache/couchdb
   - cd couchdb
   - ./configure --disable-docs --disable-fauxton
+  - rm -rf src/mango
   - cp -R ../src ./src/mango
   - make
   - cd ..
